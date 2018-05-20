@@ -30,7 +30,7 @@ for j in range(0,pointsPerPeriod):
 	velocityArchive[j] = velocity
 	for i in range(0,samplePoints):
 	
-	    acceleration = (-viscosity * velocity + spring1 * position - spring3*position*position*position + amplitude * math.cos(
+	    acceleration = (-viscosity * velocity + spring1 * position - spring3 * position * position * position + amplitude * math.cos(
 	    frequency * time))/mass
 	
 	    #Euler-Cromer algorithm
